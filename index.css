@@ -1,0 +1,88 @@
+body{
+    text-align: center;
+    background-color: pink;
+}
+
+h1{
+    padding-top: 1em;
+}
+
+h2{
+    font-size: 24pt;
+}
+
+h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.bottom{
+    font-size: 18pt;
+    margin-bottom: 10px;
+}
+
+.drink-list{
+    flex-direction: column;
+}
+
+.drink-list .title{
+    font-size: 14pt;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.drink-list li, #info li{
+    text-align: left;
+    line-height: 20pt;
+}
+
+.drink-list li a{
+    color: black;
+}
+
+#info{
+    margin-top: 20px;
+    margin-bottom: 2em;
+}
+
+
+
+
+#random-drink{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+}
+
+.box{
+    /* position: relative; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    border: 1px solid #333;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px 20px 18px 18px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px #333;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label{
+    border: none;
+    background: none;
+    padding: 15px 20px 18px 18px;
+    border-radius: none;
+    box-shadow: none;
+}
+
+#ingredients{
+    text-align: left;
+}
+
+
