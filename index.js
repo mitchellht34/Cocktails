@@ -64,7 +64,7 @@ function randomDrink() {
 
 function generateLetters() {
     const display = document.getElementById('display')
-    const browse = document.createElement('h4')
+    const browse = document.createElement('h3')
     const alphabet = document.createElement('div')
     const list = document.createElement('div')
     list.className = 'results'
@@ -87,7 +87,7 @@ function generateLetters() {
                 .then(response => response.json())
                 .then(data => {
                     if (data.drinks !== null) {
-                        list.innerHTML += `<p class="title">Drinks starting with the letter ${letter.innerText}: </p>`
+                        list.innerHTML += `<h4 class="title">Drinks starting with the letter ${letter.innerText}: </h4>`
                         makeList(data, list)
                     }
                     else {
@@ -126,7 +126,7 @@ function addSearchBar() {
             .then(data => {
                 if (data.drinks !== null) {
                     results.innerHTML += `
-                        <p class="title">Drink results matching "${searchBar.value}": </p>
+                        <h4 class="title">Drink results matching "${searchBar.value}": </h4>
                         `
                     makeList(data, results)
                 }

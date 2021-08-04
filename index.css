@@ -52,16 +52,16 @@ form{
 }
 
 .alphabet a:hover{
-    background-color: green;
-    color:white;
+    background-color: #ADEFD1FF;
+    color:#00203FFF;
 }
 
-p ~ div li a:hover{
-    background-color: coral;
-    color: teal;
+h4 ~ div li a:hover{
+    background-color: teal;
+    color: coral;
 }
 
-form ~ div p ~ div li a:hover{
+form ~ div h4 ~ div li a:hover{
     background-color: purple;
     color: yellow;
 }
@@ -70,7 +70,7 @@ form ~ div p ~ div li a:hover{
     border-right: none;
 }
 
-p ~ div li {
+h4 ~ div li {
     border: none;
     list-style: disc;
     display: inline-block;
@@ -109,3 +109,15 @@ p ~ div li {
     text-align: left;
 }
 
+
+h2{
+    font-size: 24pt;
+}
+
+h3{
+    margin: 20px;
+}
+
+h4{
+    letter-spacing: 0mm;
+}
