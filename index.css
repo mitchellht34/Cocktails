@@ -1,70 +1,94 @@
-body{
+html{
     text-align: center;
-    background-color: pink;
+    background: pink;
+    /* height: 100%;
+    width: 100%; */
 }
 
-h1{
-    padding-top: 1em;
+ul {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #bbb;
+    background-color: #dddddd;
+    display: inline-flex;
 }
 
-h2{
-    font-size: 24pt;
+li{
+    list-style-type: none;
+    border-left: 1px solid #bbb;
 }
 
-h3{
-    margin-top: 20px;
-    margin-bottom: 10px;
+li:first-child{
+    border-left: none;
 }
 
-.bottom{
-    font-size: 18pt;
-    margin-bottom: 10px;
-}
-
-.drink-list{
-    flex-direction: column;
-}
-
-.drink-list .title{
-    font-size: 14pt;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.drink-list li, #info li{
-    text-align: left;
-    line-height: 20pt;
-}
-
-.drink-list li a{
+a{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
     color: black;
 }
 
-#info{
-    margin-top: 20px;
-    margin-bottom: 2em;
+li a.nav:hover:not(.active) {
+    background-color: #333;
+    color: white;
 }
 
-
-
-
-#random-drink{
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
+.active {
+    background-color: #111;
+    color: white;
 }
+
+form{
+    padding: 20px 10px 5px 15px;
+}
+
+.alphabet{
+    display:inline-flex;
+}
+
+.alphabet a{
+    border-right: 1px solid black;
+}
+
+.alphabet a:hover{
+    background-color: green;
+    color:white;
+}
+
+p ~ div li a:hover{
+    background-color: coral;
+    color: teal;
+}
+
+form ~ div p ~ div li a:hover{
+    background-color: purple;
+    color: yellow;
+}
+
+.alphabet a:last-child{
+    border-right: none;
+}
+
+p ~ div li {
+    border: none;
+    list-style: disc;
+    display: inline-block;
+
+}
+
 
 .box{
-    /* position: relative; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
     border: 1px solid #333;
     background: rgba(255, 255, 255, 0.3);
     padding: 15px 20px 18px 18px;
     border-radius: 5px;
     box-shadow: 2px 5px 5px #333;
+}
+
+.box li{
+    text-align: left;
+    border: none;
 }
 
 .container {
@@ -84,5 +108,4 @@ h3{
 #ingredients{
     text-align: left;
 }
-
 
