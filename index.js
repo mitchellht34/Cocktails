@@ -105,7 +105,7 @@ function addSearchBar() {
     display.appendChild(newDiv)
 
     newDiv.innerHTML = `
-    <form id="drink-search" action="" method="POST">
+    <form id="drink-search" autocomplete="off" action="" method="POST">
       <label for="search-bar">Search for a drink: </label>
       <input type="text" id="search-bar" name="search-bar" placeholder="Enter text here">
       <input type="submit" value="Search">
