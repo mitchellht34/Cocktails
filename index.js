@@ -251,7 +251,7 @@ function showDrink(data, display, num) {
     instructionLabel.className = "label"
     drinkInstructions.className = "box"
     instructionLabel.innerText = "How to Make: "
-    drinkInstructions.innerText = drink.strInstructions
+    drinkInstructions.innerText = drink.strInstructions.charAt(0).toUpperCase() + drink.strInstructions.substr(1)
 
     instructionContainer.append(instructionLabel, drinkInstructions)
     display.appendChild(instructionContainer)
